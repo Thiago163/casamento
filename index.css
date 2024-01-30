@@ -38,7 +38,7 @@ header p {
 }
 
 .details img {
-    max-width: 20%; /* Largura máxima da imagem para telas menores */
+    max-width: 20vw; /* Largura máxima da imagem para telas menores */
     height: auto;
     border-radius: 8px; /* Borda mais arredondada */
     margin-bottom: 20px; /* Espaço abaixo da imagem */
@@ -56,8 +56,25 @@ header p {
 }
 
 .details p {
-    font-size: 1.2em; /* Tamanho maior para o texto */
-    margin: 15px 0; /* Aumentando a margem */
+    font-size: 2em;
+    margin: 15px 0;
+    color: #e74c3c; /* Cor vermelha vibrante */
+    font-family: 'Pacifico', cursive; /* Fonte manuscrita para um toque mais festivo */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sutil sombra no texto */
+}
+
+/* Adicione este bloco ao seu CSS */
+.whatsapp-link {
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    display: inline-block; /* Permite que o link tenha largura e altura ajustáveis */
+    color: #fff; /* Texto branco para contrastar */
+    padding: 10px 20px; /* Espaçamento interno do link */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease-in-out; /* Transição suave na cor de fundo */
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E; /* Cor mais escura ao passar o mouse */
 }
 
 /* Estilo do rodapé */
@@ -98,7 +115,7 @@ button:hover {
     }
 
     .details img {
-        max-width: 100%; /* Largura máxima da imagem para telas menores */
+        max-width: 40vw; /* Largura máxima da imagem para telas menores */
     }
 
     .details h2 {
