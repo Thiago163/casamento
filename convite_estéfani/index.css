@@ -1,0 +1,120 @@
+/* Reset de estilos para garantir uma aparência consistente em diferentes navegadores */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Cor de fundo mais suave */
+    color: #495057;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #db34ca; /* Azul brilhante */
+    color: #fff; /* Texto branco */
+}
+
+header h1 {
+    font-size: 3em; /* Tamanho maior para o título principal */
+}
+
+header p {
+    font-size: 1.3em; /* Tamanho maior para o subtexto */
+    margin-top: 15px; /* Aumentando a margem superior */
+}
+
+.details {
+    display: flex;
+    flex-direction: column; /* Altera para uma coluna em telas menores */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.details img {
+    max-width: 20%; /* Largura máxima da imagem para telas menores */
+    height: auto;
+    border-radius: 8px; /* Borda mais arredondada */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sutil sombra na imagem */
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave de zoom na imagem */
+}
+
+.details img:hover {
+    transform: scale(1.1); /* Zoom da imagem ao passar o mouse */
+}
+
+.details h2 {
+    color: #2c3e50;
+    font-size: 2em; /* Tamanho maior para o subtítulo */
+}
+
+.details p {
+    font-size: 1.2em; /* Tamanho maior para o texto */
+    margin: 15px 0; /* Aumentando a margem */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+footer p {
+    font-size: 1.3em; /* Tamanho maior para o texto do rodapé */
+}
+
+button {
+    padding: 12px 24px; /* Ajustando o tamanho do botão */
+    font-size: 1.1em; /* Tamanho maior para o texto do botão */
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 8px; /* Borda mais arredondada */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Adiciona uma transição suave na cor do botão */
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Adiciona regras de mídia para telas menores */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Reduz o tamanho do título principal */
+    }
+
+    header p {
+        font-size: 1.1em; /* Reduz o tamanho do subtexto */
+    }
+
+    .details img {
+        max-width: 100%; /* Largura máxima da imagem para telas menores */
+    }
+
+    .details h2 {
+        font-size: 1.8em; /* Reduz o tamanho do subtítulo */
+    }
+
+    .details p {
+        font-size: 1em; /* Reduz o tamanho do texto */
+    }
+
+    footer p {
+        font-size: 1.1em; /* Reduz o tamanho do texto do rodapé */
+    }
+
+    button {
+        padding: 10px 20px; /* Ajusta o tamanho do botão para telas menores */
+        font-size: 1em; /* Reduz o tamanho do texto do botão */
+    }
+}
