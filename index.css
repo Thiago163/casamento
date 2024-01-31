@@ -11,6 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-size: 18px; /* Tamanho da fonte padrão para telas maiores */
 }
 
 header {
@@ -41,8 +42,7 @@ header {
 
 .whatsapp-link {
     text-decoration: none;
-    color: #fff;
-    background-color: #25d366;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     border-radius: 5px;
     margin: 10px;
@@ -62,9 +62,9 @@ header {
 /* Adicione regras de mídia queries para ajustar o layout em diferentes tamanhos de tela */
 
 @media only screen and (max-width: 600px) {
-    /* Adicione suas regras de estilo para telas menores que 600px */
+    /* Adicione suas regras de estilo para telas menores que 600px (dispositivos móveis) */
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .details {
@@ -75,7 +75,7 @@ header {
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Adicione suas regras de estilo para telas entre 601px e 1024px */
     body {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .details {
