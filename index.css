@@ -1,144 +1,81 @@
-/* Reset de estilos para garantir uma aparência consistente em diferentes navegadores */
-body, h1, h2, p, button {
+body {
+    background-image: url('img/fundo.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-/* Estilo geral */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* Cor de fundo mais suave */
-    color: #495057;
-    line-height: 1.6;
-}
-
-/* Estilo do cabeçalho */
 header {
     text-align: center;
-    padding: 30px 0;
-    background-color: #db34ca; /* Azul brilhante */
-    color: #fff; /* Texto branco */
-}
-
-header h1 {
-    font-size: 3em; /* Tamanho maior para o título principal */
-}
-
-header p {
-    font-size: 1.3em; /* Tamanho maior para o subtexto */
-    margin-top: 15px; /* Aumentando a margem superior */
+    margin: 20px 0;
 }
 
 .details {
-    display: flex;
-    flex-direction: column; /* Altera para uma coluna em telas menores */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.details img {
-    max-width: 20vw; /* Largura máxima da imagem para telas menores */
-    height: auto;
-    border-radius: 8px; /* Borda mais arredondada */
-    margin-bottom: 20px; /* Espaço abaixo da imagem */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sutil sombra na imagem */
-    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave de zoom na imagem */
-}
-
-.details img:hover {
-    transform: scale(1.1); /* Zoom da imagem ao passar o mouse */
-}
-
-.details h2 {
-    color: #2c3e50;
-    font-size: 2em; /* Tamanho maior para o subtítulo */
-}
-
-.details p {
-    font-size: 2em;
-    margin: 15px 0;
-    color: #e74c3c; /* Cor vermelha vibrante */
-    font-family: 'Pacifico', cursive; /* Fonte manuscrita para um toque mais festivo */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sutil sombra no texto */
-}
-
-/* Adaptação para telas menores */
-@media screen and (max-width: 768px) {
-    .details p {
-        font-size: 40px; /* Reduz o tamanho da fonte para telas menores */
-    }
-}
-
-/* Adicione este bloco ao seu CSS */
-.whatsapp-link {
-    text-decoration: none; /* Remove o sublinhado padrão do link */
-    display: inline-block; /* Permite que o link tenha largura e altura ajustáveis */
-    color: #fff; /* Texto branco para contrastar */
-    padding: 10px 20px; /* Espaçamento interno do link */
-    border-radius: 5px; /* Borda arredondada */
-    transition: background-color 0.3s ease-in-out; /* Transição suave na cor de fundo */
-}
-
-.whatsapp-link:hover {
-    background-color: #128C7E; /* Cor mais escura ao passar o mouse */
-}
-
-/* Estilo do rodapé */
-footer {
     text-align: center;
     padding: 20px;
-    background-color: #34495e;
-    color: #ecf0f1;
+    border-radius: 10px;
+    margin: 20px;
 }
 
-footer p {
-    font-size: 1.3em; /* Tamanho maior para o texto do rodapé */
+.details h1, .details h2 {
+    margin-bottom: 10px;
 }
 
-button {
-    padding: 12px 24px; /* Ajustando o tamanho do botão */
-    font-size: 1.1em; /* Tamanho maior para o texto do botão */
-    background-color: #e74c3c;
-    color: #ecf0f1;
-    border: none;
-    border-radius: 8px; /* Borda mais arredondada */
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out; /* Adiciona uma transição suave na cor do botão */
+.footer {
+    text-align: center;
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #c0392b;
+.whatsapp-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #25d366;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
 }
 
-/* Adiciona regras de mídia para telas menores */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em; /* Reduz o tamanho do título principal */
+.whatsapp-link:hover, .details:hover {
+    background-color: rgba(255, 196, 196, 0.8);
+}
+
+.whatsapp-link img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Adicione regras de mídia queries para ajustar o layout em diferentes tamanhos de tela */
+
+@media only screen and (max-width: 600px) {
+    /* Adicione suas regras de estilo para telas menores que 600px */
+    body {
+        font-size: 14px;
     }
 
-    header p {
-        font-size: 1.1em; /* Reduz o tamanho do subtexto */
-    }
-
-    .details img {
-        max-width: 40vw; /* Largura máxima da imagem para telas menores */
-    }
-
-    .details h2 {
-        font-size: 1.8em; /* Reduz o tamanho do subtítulo */
-    }
-
-    .details p {
-        font-size: 1em; /* Reduz o tamanho do texto */
-    }
-
-    footer p {
-        font-size: 1.1em; /* Reduz o tamanho do texto do rodapé */
-    }
-
-    button {
-        padding: 10px 20px; /* Ajusta o tamanho do botão para telas menores */
-        font-size: 1em; /* Reduz o tamanho do texto do botão */
+    .details {
+        padding: 10px;
     }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adicione suas regras de estilo para telas entre 601px e 1024px */
+    body {
+        font-size: 16px;
+    }
+
+    .details {
+        padding: 15px;
+    }
+}
+
+/* Adicione mais regras de mídia queries conforme necessário para outros tamanhos de tela */
