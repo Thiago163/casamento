@@ -24,6 +24,13 @@ header {
     font-size: 3vw; /* Substitua pelo tamanho de fonte desejado */
     font-family: 'Arial', sans-serif; /* Substitua pela fonte desejada, se necessário */
     font-weight: bold; /* Substitua pelo peso da fonte desejado (por exemplo, bold, normal, etc.) */
+    max-width: 100%; /* Impede que o texto ultrapasse a largura do contêiner pai */
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+
+    @media (max-width: 600px) {
+        font-size: 9vw; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
 }
 
 .details {
