@@ -37,26 +37,30 @@ header {
 
 .whatsapp-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .whatsapp-link {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000000; /* ou color: rgb(0, 0, 0); */
     padding: 10px 20px;
     border-radius: 5px;
     margin: 10px;
     transition: background-color 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.whatsapp-link:hover, .details:hover {
+.whatsapp-link:hover {
     background-color: rgba(255, 196, 196, 0.8);
 }
 
 .whatsapp-link img {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /* Adicione regras de mídia queries para ajustar o layout em diferentes tamanhos de tela */
