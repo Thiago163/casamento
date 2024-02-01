@@ -37,11 +37,11 @@ header {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    margin: 1px;
+    margin: 0.5px;
 }
 
 .details h1, .details h2 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .footer {
