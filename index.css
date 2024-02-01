@@ -46,13 +46,13 @@ header {
 
 .footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 .whatsapp-link img {
     width: 40px;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* Adicione regras de mídia queries para ajustar o layout em diferentes tamanhos de tela */
